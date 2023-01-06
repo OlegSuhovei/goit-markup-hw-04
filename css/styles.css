@@ -55,8 +55,8 @@ display: block;
   padding-right: 15px;
   padding-left: 15px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 } 
 
  .section {
@@ -366,7 +366,6 @@ display: block;
   border-color: #2196F3;
 }
 
-
 .customers-icon {
   fill: #AFB1B8;
 } 
@@ -379,6 +378,10 @@ display: block;
   padding-top: 60px;
   padding-bottom: 60px;
 } 
+
+.footer-container {
+  display: flex;
+}
 
 .footer-logo {
   font-family: 'Raleway';
@@ -394,6 +397,7 @@ display: block;
 
 .footer-address {
   display: flex;
+  margin-right: 70px;
 }
 
 .footer-link {
@@ -420,8 +424,45 @@ display: block;
   margin-bottom: 0;
 }
 
+.footer-icon {
+  padding-top: 12px;
+  padding-bottom: 100px;
+}
 
- 
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.list-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.item-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.item-icon:hover,
+.item-icon:focus {
+  background-color: #2196F3;;
+}
+
+.footer-socials-icon {
+  fill:  #FFFFFF;
+} 
+
 /* --сторінка порфоліо */
 
 .portfolio-button {
@@ -450,7 +491,6 @@ display: block;
 .button-active {
   color: #FFFFFF;
   background-color:#2196F3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   padding: 06px 25px;
   min-width: 73px;
 }
@@ -475,12 +515,18 @@ display: block;
 .button:focus {
   color: #FFFFFF;
   background-color: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .portfolio-projects {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-img {
